@@ -1,5 +1,4 @@
 from paramiko.client import SSHClient
-from werkzeug.datastructures import is_immutable
 
 class DataSourceException(Exception):
     def __init__(self, message, code = None):
