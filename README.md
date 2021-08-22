@@ -4,4 +4,4 @@
 - Pip
 ## Instruction
 - Install the dependencies: python3 -m pip install -r requirements.txt
-- Running the main.py file: python3 main.py (basic mode), python3 main.py advanced=true (advanced mode)
+- Run main.py
