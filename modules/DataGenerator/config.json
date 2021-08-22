@@ -1,0 +1,17 @@
+{
+  "SEED": 1,
+  "APPEND": true,
+  "AUTO_FILL_VERTEX": "RANDOM",
+  "AUTO_FILL_EDGE": "RANDOM",
+  "NUM_VERTEX": {
+    "Customer": 10,
+    "ssn": 10,
+    "firstname": 10,
+    "lastname": 10
+  },
+  "NUM_EDGE": {
+    "Customer_TO_ssn": 10,
+    "Customer_TO_firstname": 10,
+    "Customer_TO_lastname": 10
+  }
+}
