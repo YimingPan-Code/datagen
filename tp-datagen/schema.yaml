@@ -1,0 +1,844 @@
+EdgeTypes: 
+- Attributes: []
+  EdgeId: 0
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_has_Address
+  ToVertexTypeList: 
+  - Address
+  ToVertexTypeName: Address
+- Attributes: []
+  EdgeId: 1
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_to_Role
+  ToVertexTypeList: 
+  - Account_role
+  ToVertexTypeName: Account_role
+- Attributes: 
+  - AttributeName: Role
+    AttributeType: STRING
+  EdgeId: 2
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_to_Customer
+  ToVertexTypeList: 
+  - Customer
+  ToVertexTypeName: Customer
+- Attributes: []
+  EdgeId: 3
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_to_Phone
+  ToVertexTypeList: 
+  - phone
+  ToVertexTypeName: phone
+- Attributes: []
+  EdgeId: 4
+  FromVertexTypeList: 
+  - Back_Office_Transaction
+  FromVertexTypeName: Back_Office_Transaction
+  GraphId: 0
+  InitVersionAttributes: []
+  IsDirected: true
+  Name: Cancel_pair_transaction
+  ReverseEdgeId: 5
+  ReverseEdgeName: reverse_Cancel_pair_transaction
+  ToVertexTypeList: 
+  - Back_Office_Transaction
+  ToVertexTypeName: Back_Office_Transaction
+- Attributes: []
+  EdgeId: 5
+  FromVertexTypeList: 
+  - Back_Office_Transaction
+  FromVertexTypeName: Back_Office_Transaction
+  GraphId: 0
+  InitVersionAttributes: []
+  IsDirected: true
+  Name: reverse_Cancel_pair_transaction
+  ReverseEdgeId: 4
+  ReverseEdgeName: Cancel_pair_transaction
+  ToVertexTypeList: 
+  - Back_Office_Transaction
+  ToVertexTypeName: Back_Office_Transaction
+- Attributes: 
+  - AttributeName: Offset_Account_Rule
+    AttributeType: STRING
+  EdgeId: 6
+  FromVertexTypeList: 
+  - Back_Office_Transaction
+  FromVertexTypeName: Back_Office_Transaction
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Offset_Account
+  ToVertexTypeList: 
+  - Account
+  ToVertexTypeName: Account
+- Attributes: []
+  EdgeId: 7
+  FromVertexTypeList: 
+  - Back_Office_Transaction
+  FromVertexTypeName: Back_Office_Transaction
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Transaction_Security
+  ToVertexTypeList: 
+  - Security
+  ToVertexTypeName: Security
+- Attributes: []
+  EdgeId: 8
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Country_of_residence
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: []
+  EdgeId: 9
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Country_of_taxation
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: []
+  EdgeId: 10
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Primary_customer
+  ToVertexTypeList: 
+  - Customer
+  ToVertexTypeName: Customer
+- Attributes: []
+  EdgeId: 11
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: account_to_household
+  ToVertexTypeList: 
+  - Household_group
+  ToVertexTypeName: Household_group
+- Attributes: []
+  EdgeId: 12
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_to_Product
+  ToVertexTypeList: 
+  - Product
+  ToVertexTypeName: Product
+- Attributes: 
+  - AttributeName: Description
+    AttributeType: STRING
+  EdgeId: 13
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_to_Fund
+  ToVertexTypeList: 
+  - Fund
+  ToVertexTypeName: Fund
+- Attributes: []
+  EdgeId: 14
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Customer_has_Address
+  ToVertexTypeList: 
+  - Address
+  ToVertexTypeName: Address
+- Attributes: 
+  - AttributeName: Relationship_Type
+    AttributeType: STRING
+  EdgeId: 15
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Customer_associated_with_country
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: []
+  EdgeId: 16
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Primary_citizenhsip
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: []
+  EdgeId: 17
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Secondary_citizenship
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: []
+  EdgeId: 18
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Country_of_headquarters
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: []
+  EdgeId: 19
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Country_of_operation
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: 
+  - AttributeName: Role
+    AttributeType: STRING
+  EdgeId: 20
+  FromVertexTypeList: 
+  - Employee
+  FromVertexTypeName: Employee
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Employee_to_Account
+  ToVertexTypeList: 
+  - Account
+  ToVertexTypeName: Account
+- Attributes: []
+  EdgeId: 21
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_to_BOT
+  ToVertexTypeList: 
+  - Back_Office_Transaction
+  ToVertexTypeName: Back_Office_Transaction
+- Attributes: []
+  EdgeId: 22
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_to_FOT
+  ToVertexTypeList: 
+  - Front_office_transaction
+  ToVertexTypeName: Front_office_transaction
+- Attributes: []
+  EdgeId: 23
+  FromVertexTypeList: 
+  - Front_office_transaction
+  FromVertexTypeName: Front_office_transaction
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Transaction_to_part
+  ToVertexTypeList: 
+  - Front_office_transaction_party
+  ToVertexTypeName: Front_office_transaction_party
+- Attributes: 
+  - AttributeName: Purpose
+    AttributeType: STRING
+  EdgeId: 24
+  FromVertexTypeList: 
+  - Address
+  FromVertexTypeName: Address
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Party_Address
+  ToVertexTypeList: 
+  - Front_office_transaction_party
+  ToVertexTypeName: Front_office_transaction_party
+- Attributes: 
+  - AttributeName: Master
+    AttributeType: BOOL
+  EdgeId: 25
+  FromVertexTypeList: 
+  - Investment_advisor
+  FromVertexTypeName: Investment_advisor
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Investment_Account
+  ToVertexTypeList: 
+  - Account
+  ToVertexTypeName: Account
+- Attributes: []
+  EdgeId: 26
+  FromVertexTypeList: 
+  - Security
+  FromVertexTypeName: Security
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Security_Country
+  ToVertexTypeList: 
+  - Country
+  ToVertexTypeName: Country
+- Attributes: []
+  EdgeId: 27
+  FromVertexTypeList: 
+  - Security
+  FromVertexTypeName: Security
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Security_Daily
+  ToVertexTypeList: 
+  - Security_market_daily
+  ToVertexTypeName: Security_market_daily
+- Attributes: []
+  EdgeId: 28
+  FromVertexTypeList: 
+  - Trade_execution
+  FromVertexTypeName: Trade_execution
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Trade_Security
+  ToVertexTypeList: 
+  - Security
+  ToVertexTypeName: Security
+- Attributes: []
+  EdgeId: 29
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Buyer_account
+  ToVertexTypeList: 
+  - Trade_execution
+  ToVertexTypeName: Trade_execution
+- Attributes: []
+  EdgeId: 30
+  FromVertexTypeList: 
+  - Account
+  FromVertexTypeName: Account
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Seller_acount
+  ToVertexTypeList: 
+  - Trade_execution
+  ToVertexTypeName: Trade_execution
+- Attributes: []
+  EdgeId: 31
+  FromVertexTypeList: 
+  - Trade_execution
+  FromVertexTypeName: Trade_execution
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Trade_Product
+  ToVertexTypeList: 
+  - Product
+  ToVertexTypeName: Product
+- Attributes: 
+  - AttributeName: Buyer_type
+    AttributeType: STRING
+  EdgeId: 32
+  FromVertexTypeList: 
+  - Customer
+  FromVertexTypeName: Customer
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Buyer
+  ToVertexTypeList: 
+  - Trade_execution
+  ToVertexTypeName: Trade_execution
+- Attributes: 
+  - AttributeName: Seller_type
+    AttributeType: STRING
+  EdgeId: 33
+  FromVertexTypeList: 
+  - Trade_execution
+  FromVertexTypeName: Trade_execution
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Seller
+  ToVertexTypeList: 
+  - Customer
+  ToVertexTypeName: Customer
+- Attributes: []
+  EdgeId: 34
+  FromVertexTypeList: 
+  - Organization
+  FromVertexTypeName: Organization
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Customer_Organization
+  ToVertexTypeList: 
+  - Customer
+  ToVertexTypeName: Customer
+GraphCode: E26LWGydZXDbuvKxTwveWlovQLdui1hsnWVw27rysU8L3lpaL0C3MgdRKbQI47N0JP/yHJERnfJ3MZ0+qIllr5cnfYU+2BbCKafDfUhrbuutqIVyPz5X3L+u/OaWZ29UpyRmBZTsqHvnOoR01XeElxMQemxdY3d8Ou7WtGgfQVC5ickf7FIYvUg+LykmaqAI13X6bpJ2L7OcJYXobMwtTphUQcMsr9OuIQOXidk+FjKe92cljQEkFEo6iez/4jPMzWUPkeJPe/xLnfHO9pT6Ui1t4PLRsCZgWMuRfRqUUV83lX9Il70s2EzLMnPvI1a/3XL7e7Hr3PYnhfQkkaVAHBkYWYF8JhGrdY4F+yrUKSunf7x5q7Y1KIsu3s8FtnXKagXMWMJ6SQSc6TyWwUHpROmvAOoseREUKS5O+5XuKgsNvok7JZU4j937Ai2Y9YCkAcFj24D6te4FgtgzsgYucaZkdF3bAUXt4po/6MQtVZzUDQw0YoBnX7PQYCsxwFwVUycBGrxSqMeOZ1PRMfTCml444DmxTwveWlovQLcy
+GraphConfigVersion: 0
+GraphId: 1
+GraphName: RJF
+JsonAPIVersion: v2
+LatestEdgeId: 35
+LatestVertexId: 18
+SegSizeInBits: 20
+VertexTypes: 
+- Attributes: 
+  - AttributeName: Identifier
+    AttributeType: INT
+    PrimaryIdAsAttribute: true
+  - AttributeName: Open_date
+    AttributeType: INT
+    DateTime: true
+  - AttributeName: Account_status
+    AttributeType: STRING
+  - AttributeName: Alternate_identifier
+    AttributeType: INT
+    HasIndex: true
+    IndexName: Alternate_identifier_z0n55hggfw
+  - AttributeName: DVP_or_RVP
+    AttributeType: BOOL
+  - AttributeName: Last_activity
+    AttributeType: INT
+    DateTime: true
+  - AttributeName: Account_open_method
+    AttributeType: STRING
+  - AttributeName: Balance
+    AttributeType: REAL
+    DS: NEW
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account
+  PrimaryId: 
+    AttributeName: Identifier
+    AttributeType: INT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 0
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Purpose
+    AttributeType: STRING
+  - AttributeName: Address_record_number
+    AttributeType: INT
+  - AttributeName: City
+    AttributeType: STRING
+  - AttributeName: Country
+    AttributeType: STRING
+  - AttributeName: Postal_code
+    AttributeType: STRING
+  - AttributeName: Region
+    AttributeType: STRING
+  - AttributeName: State
+    AttributeType: STRING
+  - AttributeName: Street_line1
+    AttributeType: STRING
+  - AttributeName: Street_line2
+    AttributeType: STRING
+  - AttributeName: Street_line3
+    AttributeType: STRING
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Address
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 1
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Customer_account_role
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  - AttributeName: Ownership
+    AttributeType: BOOL
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Account_role
+  PrimaryId: 
+    AttributeName: Customer_account_role
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 2
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Customer_id
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  - AttributeName: Add_date
+    AttributeType: INT
+    DateTime: true
+  - AttributeName: status
+    AttributeType: STRING
+  - AttributeName: Date_of_Birth
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  - AttributeName: AUM
+    AttributeType: REAL
+    DS: NEW
+  - AttributeName: PIC_or_PIV
+    AttributeType: BOOL
+    DS: NEW
+  - AttributeName: BO_or_PC
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Date_of_incorporated
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  - AttributeName: Industry
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Type
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Date_of_death
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  - AttributeName: Financial_profile_last_Update_date
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  - AttributeName: First_name
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Middle_name
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Last_name
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Occupation
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Origanization_legal_structure
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Organization_name
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: SAR
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Public_or_private
+    AttributeType: BOOL
+    DS: NEW
+  - AttributeName: Wealth_source
+    AttributeType: STRING
+    DS: NEW
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Customer
+  PrimaryId: 
+    AttributeName: Customer_id
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 3
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: phone_number
+    AttributeType: INT
+    PrimaryIdAsAttribute: true
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: phone
+  PrimaryId: 
+    AttributeName: phone_number
+    AttributeType: INT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 4
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Transaction_Reference_Identifier
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  - AttributeName: Credit_debit_code
+    AttributeType: INT
+  - AttributeName: Execution_date
+    AttributeType: INT
+    DateTime: true
+  - AttributeName: Unrelated_party
+    AttributeType: STRING
+  - AttributeName: Unit_quantity
+    AttributeType: REAL
+  - AttributeName: Amount
+    AttributeType: REAL
+  - AttributeName: Product_type
+    AttributeType: STRING
+  - AttributeName: Type_description
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Subtype_description
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Trailer_description
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Alternative_trailer_description
+    AttributeType: STRING
+    DS: NEW
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Back_Office_Transaction
+  PrimaryId: 
+    AttributeName: Transaction_Reference_Identifier
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 5
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Expiration_date
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  - AttributeName: Put_call_code
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Product_category
+    AttributeType: STRING
+    DS: NEW
+  - AttributeName: Short_name
+    AttributeType: STRING
+    DS: NEW
+    HasIndex: true
+    IndexName: Short_name_t3chisq5czr
+  - AttributeName: Identifier
+    AttributeType: INT
+    DS: NEW
+    HasIndex: true
+    IndexName: Identifier_v44l0uogu1
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Security
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 6
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Country_code
+    AttributeType: INT
+    PrimaryIdAsAttribute: true
+  - AttributeName: Country_name
+    AttributeType: STRING
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Country
+  PrimaryId: 
+    AttributeName: Country_code
+    AttributeType: INT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 7
+  VertexStatisticsType: 2
+- Attributes: []
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Household_group
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 8
+  VertexStatisticsType: 2
+- Attributes: []
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Product
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 9
+  VertexStatisticsType: 2
+- Attributes: []
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Fund
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 10
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Type
+    AttributeType: STRING
+  - AttributeName: First_name
+    AttributeType: STRING
+  - AttributeName: Last_name
+    AttributeType: STRING
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Employee
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: INT
+  VertexId: 11
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Transaction_Reference_Identifier
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  - AttributeName: Execution_date
+    AttributeType: INT
+    DateTime: true
+  - AttributeName: Description
+    AttributeType: STRING
+  - AttributeName: Type_description
+    AttributeType: STRING
+  - AttributeName: Subtype_desciprtion
+    AttributeType: STRING
+  - AttributeName: Trailer_description
+    AttributeType: STRING
+  - AttributeName: Alternative_trailer_description
+    AttributeType: STRING
+  - AttributeName: Instrument_number
+    AttributeType: INT
+  - AttributeName: Instrument_Name
+    AttributeType: STRING
+  - AttributeName: Transaction_amount
+    AttributeType: REAL
+  - AttributeName: Issuing_date
+    AttributeType: INT
+    DateTime: true
+  - AttributeName: Posting_date
+    AttributeType: INT
+    DateTime: true
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Front_office_transaction
+  PrimaryId: 
+    AttributeName: Transaction_Reference_Identifier
+    AttributeType: STRING
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 12
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Name
+    AttributeType: STRING
+  - AttributeName: Unknown_party_name_flag
+    AttributeType: STRING
+  - AttributeName: Internal_account
+    AttributeType: STRING
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Front_office_transaction_party
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 13
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Name
+    AttributeType: STRING
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Investment_advisor
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 14
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Code
+    AttributeType: STRING
+  - AttributeName: Name
+    AttributeType: STRING
+  - AttributeName: Date
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Organization
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 15
+  VertexStatisticsType: 2
+- Attributes: []
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Security_market_daily
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 16
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: Open_or_Closed
+    AttributeType: BOOL
+  - AttributeName: Firm
+    AttributeType: INT
+  - AttributeName: Settlement_Date
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  - AttributeName: Price
+    AttributeType: REAL
+    DS: NEW
+  - AttributeName: Principal_amount
+    AttributeType: REAL
+    DS: NEW
+  - AttributeName: Unity_quantity
+    AttributeType: INT
+    DS: NEW
+  - AttributeName: Trade_execution_date
+    AttributeType: INT
+    DS: NEW
+    DateTime: true
+  - AttributeName: Purpose
+    AttributeType: STRING
+    DS: NEW
+  GraphId: 0
+  InitVersionAttributes: []
+  Name: Trade_execution
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: STRING
+  VertexId: 17
+  VertexStatisticsType: 2
+graphCreator: tigergraph
+supportVersions: 
+- v2
+tagGraphList: []
+tagList: []
+type: BASE
